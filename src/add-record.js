@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
    const formTitle = document.getElementById('form-title'); 
    const nameInput = document.getElementById('emp-name'); 
    const emailInput = document.getElementById('emp-email'); 
-   const departmentSelect = document.getElementById('emp-department'); 
+    const departmentSelect = document.getElementById('emp-dept'); 
    const salaryInput = document.getElementById('emp-salary'); 
    const cancelBtn = document.getElementById('cancel-btn'); 
    const saveBtn = document.getElementById('save-btn'); 
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
        const employees = getEmployees(); 
  
        // Duplicate check: prevent adding a record with the same email 
-       const duplicate = employees.find(emp => emp.email.toLowerCase() === email.toLowerCase() && emp.id !== employeeId); 
+        const duplicate = employees.find(emp => emp.email.toLowerCase() === email.toLowerCase() && String(emp.id) !== String(employeeId)); 
        if (duplicate) { 
            errorMsg.textContent = 'An employee with this email already exists.'; 
            errorMsg.classList.add('visible'); 
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
  
        if (mode === 'modify' && employeeId) { 
            // Update existing record 
-           const index = employees.findIndex(emp => emp.id === employeeId); 
+            const index = employees.findIndex(emp => String(emp.id) === String(employeeId)); 
            if (index !== -1) { 
                employees[index] = { 
                    ...employees[index], 

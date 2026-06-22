@@ -28,15 +28,23 @@ function generateId() {
 }
 
 function getCredentials() {
-  return JSON.parse(localStorage.getItem('credentials')) || {};
+  try {
+    return JSON.parse(localStorage.getItem('credentials')) || {};
+  } catch {
+    return {};
+  }
+}
+
+function getEmployees() {
+  try {
+    return JSON.parse(localStorage.getItem('employees')) || [];
+  } catch {
+    return [];
+  }
 }
 
 function updateCredentials(creds) {
   localStorage.setItem('credentials', JSON.stringify(creds));
-}
-
-function getEmployees() {
-  return JSON.parse(localStorage.getItem('employees')) || [];
 }
 
 function saveEmployees(employees) {
@@ -44,7 +52,7 @@ function saveEmployees(employees) {
 }
 
 function getEmployeeById(id) {
-  return getEmployees().find(emp => emp.id === id) || null;
+  return getEmployees().find(emp => String(emp.id) === String(id)) || null;
 }
 
 async function loadEmployeeData() {
