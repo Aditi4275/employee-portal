@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+   <meta charset="UTF-8"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <meta name="description" content="Employee Portal - Register a new account"> 
+   <title>Employee Portal - Register</title> 
+   <link rel="stylesheet" href="../css/common.css"> 
+   <link rel="stylesheet" href="../css/login.css"> 
+</head> 
+<body> 
+   <div class="page-wrapper"> 
+       <!-- Header Bar --> 
+       <div class="header-bar"></div> 
+ 
+       <!-- Register Content --> 
+       <div class="login-container"> 
+           <div class="login-card"> 
+               <!-- Logo --> 
+               <img src="../images/logo.png" alt="Employee Portal Logo" class="login-logo" id="login-logo"> 
+               <h2 style="margin-bottom: 20px; color: #333;">Register</h2> 
+ 
+               <div class="form-group"> 
+                   <label for="name">Name</label> 
+                   <input type="text" class="form-input" id="name" placeholder="Enter full name"> 
+                   <div class="error-message" id="name-error"></div> 
+               </div> 
+ 
+               <div class="form-group"> 
+                   <label for="email-id">Email ID</label> 
+                   <input type="email" class="form-input" id="email-id" placeholder="Enter email"> 
+                   <div class="error-message" id="email-error"></div> 
+               </div> 
+ 
+               <div class="form-group"> 
+                   <label for="password">Password</label> 
+                   <input type="password" class="form-input" id="password" placeholder="Enter password"> 
+                   <div class="error-message" id="password-error"></div> 
+               </div> 
+ 
+               <!-- Error Message --> 
+               <div class="error-message" id="register-error"></div> 
+ 
+               <!-- Register Button --> 
+               <button class="btn btn-primary login-btn" id="register-btn">Register</button> 
+ 
+               <!-- Login Link --> 
+               <div class="register-link-container"> 
+                   <span>Already have an account? </span> 
+                   <a href="../index.html" class="register-link">Login here</a> 
+               </div> 
+           </div> 
+       </div> 
+   </div> 
+   <script src="../js/common.js?v=2"></script> 
+   <script src="../js/register.js?v=2"></script> 
+</body> 
+</html>

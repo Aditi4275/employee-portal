@@ -1,0 +1,93 @@
+.login-container { 
+   flex: 1; 
+   display: flex; 
+   align-items: center; 
+   justify-content: center; 
+   padding: 40px 20px; 
+} 
+ 
+.login-card { 
+   padding: 50px 60px; 
+   text-align: center; 
+   animation: fadeInUp 0.6s ease forwards; 
+   width: 100%; 
+   max-width: 440px; 
+} 
+ 
+.login-logo { 
+   width: 120px; 
+   height: 120px; 
+   margin: 0 auto 30px auto; 
+   display: block; 
+   filter: drop-shadow(0 0 20px rgba(0, 188, 212, 0.4)); 
+   transition: filter 0.3s ease; 
+} 
+ 
+.login-logo:hover { 
+   filter: drop-shadow(0 0 30px rgba(0, 188, 212, 0.6)); 
+} 
+ 
+.login-card .form-group { 
+   align-items: center; 
+   margin-bottom: 22px; 
+} 
+ 
+.login-card .form-group label { 
+   font-size: 16px; 
+   font-weight: 600; 
+   color: #333; 
+   text-align: center; 
+} 
+ 
+.login-card .form-input { 
+   max-width: 100%; 
+   text-align: center; 
+} 
+ 
+.login-card .forgot-link { 
+   display: block; 
+   margin-top: 6px; 
+   margin-bottom: 28px; 
+   color: #90a4ae; 
+   font-size: 14px; 
+   font-style: italic; 
+   text-decoration: none; 
+   transition: color 0.2s ease; 
+} 
+ 
+.login-card .forgot-link:hover { 
+   color: #00bcd4; 
+   text-decoration: underline; 
+} 
+ 
+.login-card .error-message { 
+   text-align: center; 
+   margin-bottom: 12px; 
+} 
+ 
+.login-btn { 
+   width: 100%; 
+   padding: 12px; 
+   font-size: 16px; 
+   font-weight: 600; 
+   border-radius: 10px; 
+   letter-spacing: 0.5px; 
+} 
+ 
+.register-link-container { 
+   margin-top: 20px; 
+   font-size: 14px; 
+   color: #90a4ae; 
+} 
+ 
+.register-link { 
+   color: #00bcd4; 
+   text-decoration: none; 
+   font-weight: 600; 
+   transition: color 0.2s ease; 
+} 
+ 
+.register-link:hover { 
+   color: #0097a7; 
+   text-decoration: underline; 
+} 

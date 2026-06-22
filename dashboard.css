@@ -1,0 +1,137 @@
+/* ===== Dashboard Page Styles ===== */ 
+ 
+.dashboard-header .left-group .btn { 
+   background: rgba(255, 255, 255, 0.95); 
+   color: #333; 
+   padding: 6px 18px; 
+   font-size: 13px; 
+   font-weight: 600; 
+   border: 1px solid rgba(255, 255, 255, 0.4); 
+   border-radius: 6px; 
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.dashboard-header .left-group .btn:hover { 
+   background: #ffffff; 
+   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); 
+} 
+ 
+.dashboard-header .right-group { 
+   gap: 10px; 
+} 
+ 
+.search-box { 
+   display: flex; 
+   align-items: center; 
+   gap: 8px; 
+} 
+ 
+.search-box input { 
+   padding: 6px 12px; 
+   font-family: 'Inter', sans-serif; 
+   font-size: 13px; 
+   border: 1.5px solid rgba(255, 255, 255, 0.5); 
+   border-radius: 6px; 
+   background: rgba(255, 255, 255, 0.9); 
+   color: #333; 
+   outline: none; 
+   width: 180px; 
+   transition: all 0.25s ease; 
+} 
+ 
+.search-box input:focus { 
+   border-color: #fff; 
+   background: #fff; 
+   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25); 
+} 
+ 
+.search-box label { 
+   color: #fff; 
+   font-size: 13px; 
+   font-weight: 600; 
+} 
+ 
+.logout-btn { 
+   background: rgba(255, 255, 255, 0.95) !important; 
+   color: #333 !important; 
+   padding: 6px 20px !important; 
+   font-size: 13px !important; 
+   font-weight: 600 !important; 
+   border: 1px solid rgba(255, 255, 255, 0.4) !important; 
+   border-radius: 6px !important; 
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.logout-btn:hover { 
+   background: #ffffff !important; 
+   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important; 
+} 
+ 
+/* ===== Table ===== */ 
+.table-container { 
+   padding: 30px 40px; 
+   animation: fadeInUp 0.5s ease forwards; 
+} 
+ 
+.employee-table { 
+   width: 100%; 
+   border-collapse: collapse; 
+   overflow: hidden; 
+} 
+ 
+.employee-table thead { 
+   background: #f7fbfd; 
+} 
+ 
+.employee-table th { 
+   padding: 14px 20px; 
+   text-align: left; 
+   font-size: 15px; 
+   font-weight: 700; 
+   color: #333; 
+   border-bottom: 2px solid #ddd; 
+   border-right: 1px solid #e0e0e0; 
+} 
+ 
+.employee-table th:last-child { 
+   border-right: none; 
+} 
+ 
+.employee-table td { 
+   padding: 12px 20px; 
+   font-size: 14px; 
+   color: #555; 
+   border-bottom: 1px solid #eee; 
+   border-right: 1px solid #e8e8e8; 
+} 
+ 
+.employee-table td:last-child { 
+   border-right: none; 
+} 
+ 
+.employee-table tbody tr { 
+   cursor: pointer; 
+   transition: background 0.2s ease; 
+} 
+ 
+.employee-table tbody tr:hover { 
+   background: #f0f9fa; 
+} 
+ 
+.employee-table tbody tr.selected { 
+   background: #e0f7fa; 
+   box-shadow: inset 4px 0 0 #00bcd4; 
+} 
+ 
+.employee-table tbody tr:last-child td { 
+   border-bottom: none; 
+} 
+ 
+/* Empty state */ 
+.empty-state { 
+   text-align: center; 
+   padding: 60px 20px; 
+   color: #999; 
+   font-size: 15px; 
+   font-style: italic; 
+} 

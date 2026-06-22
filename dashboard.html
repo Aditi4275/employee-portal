@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/dashboard.css">
+    </head>
+    <body>
+        <div class="page-wrapper"> 
+        <div class="header-bar dashboard-header"> 
+           <div class="left-group"> 
+               <button class="btn-icon" id="back-btn" title="Go Back">&#8592;</button> 
+               <button class="btn" id="add-btn">Add</button> 
+               <button class="btn" id="modify-btn">Modify</button> 
+               <button class="btn" id="delete-btn">Delete</button> 
+           </div> 
+
+            <div class="right-group"> 
+               <div class="search-box"> 
+                   <input type="text" id="search-input" placeholder="Search..." autocomplete="off"> 
+                   <label for="search-input"></label> 
+               </div> 
+               <button class="btn logout-btn" id="logout-btn">Logout</button> 
+           </div> 
+       </div> 
+
+        <div class="table-container"> 
+           <table class="employee-table" id="employee-table"> 
+               <thead> 
+                   <tr> 
+                       <th>Name</th> 
+                       <th>Email</th> 
+                       <th>Department</th> 
+                       <th>Salary</th> 
+                   </tr> 
+               </thead> 
+               <tbody id="employee-tbody">
+                 </tbody> 
+           </table> 
+           <div class="empty-state" id="empty-state" style="display: none;"> 
+               No employee records found. 
+           </div> 
+       </div> 
+   </div> 
+ 
+   <script src="../src/common.js"></script> 
+   <script src="../src/dashboard.js"></script> 
+</body> 
+</html> 
+        

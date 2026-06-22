@@ -1,0 +1,52 @@
+  
+[   
+    {
+            "id": 1,
+            "name": "Shekhar",
+            "email": "shekhar@gmail.com",
+            "department": "Marketing",
+            "salary": 45890
+    },
+    {
+            "id": 2,
+            "name": "Maya",
+            "email": "maya@gmail.com",
+            "department": "HR",
+            "salary": 98734
+    },
+    {
+            "id": 3,
+            "name": "Giya",
+            "email": "giya@gmail.com",
+            "department": "Engineering",
+            "salary": 23487
+    },
+    {
+            "id": 4,
+            "name": "Zakir",
+            "email": "zakir@gmail.com",
+            "department": "HR",
+            "salary": 92747
+    },
+    {
+            "id": 5,
+            "name": "Krishna",
+            "email": "krishna@gmail.com",
+            "department": "Sales",
+            "salary": 34452
+    },
+    {
+            "id": 6,
+            "name": "Carry",
+            "email": "carry@gmail.com",
+            "department": "Engineering",
+            "salary": 67432
+    },
+    {
+            "id": 7,
+            "name": "Hanna",
+            "email": "hanna@gmail.com",
+            "department": "Sales",
+            "salary": 25466
+    }
+]
