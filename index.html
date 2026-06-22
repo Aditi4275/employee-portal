@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Employee Portal - Login to access the employee management system"> 
+    <title>Employee Portal - Login</title> 
+    <link rel="stylesheet" href="css/common.css"> 
+    <link rel="stylesheet" href="css/login.css"> 
+</head> 
+
+<body> 
+    <div class="page-wrapper"> 
+        <div class="header-bar"></div> 
+
+        <div class="login-container"> 
+            <div class="login-card"> 
+                <img src="images/logo.png" alt="Employee Portal Logo" class="login-logo" id="login-logo"> 
+
+                <div class="form-group"> 
+                    <label for="email-id">Email ID</label> 
+                    <input type="email" class="form-input" id="email-id" placeholder="Enter email (gmail/yahoo/outlook)" autocomplete="email"> 
+                    <div class="error-message" id="email-error"></div> 
+                </div> 
+
+                <div class="form-group"> 
+                    <label for="password">Password</label> 
+                    <input type="password" class="form-input" id="password" placeholder="Enter password" autocomplete="current-password"> 
+                    <div class="error-message" id="password-error"></div> 
+                </div> 
+
+                <a href="pages/forgot-password.html" class="forgot-link" id="forgot-password-link">Forgot Password</a> 
+
+                <div class="error-message" id="login-error">Invalid username or password. Please check and re-enter.</div> 
+
+                <button class="btn btn-primary login-btn" id="login-btn">Login</button> 
+
+                <div class="register-link-container"> 
+                    <span>New user? </span> 
+                    <a href="pages/register.html" class="register-link">Register here</a> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+    <script src="js/common.js?v=2"></script> 
+    <script src="js/login.js?v=2"></script> 
+</body> 
+</html>
