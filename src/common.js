@@ -70,3 +70,16 @@ async function loadEmployeeData() {
     saveEmployees([]);
   }
 }
+
+function loadCredentialsData() {
+  if (localStorage.getItem('credentials')) return;
+
+  updateCredentials({
+    username: 'admin@gmail.com',
+    password: 'Admin@123',
+    email: 'admin@gmail.com',
+    name: 'Admin'
+  });
+}
+
+loadCredentialsData();
